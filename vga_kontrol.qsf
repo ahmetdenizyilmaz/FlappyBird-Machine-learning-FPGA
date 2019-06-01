@@ -1,0 +1,137 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 14:46:12  April 20, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		vga_kontrol_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY vga_kontrol
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:46:12  APRIL 20, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name VHDL_FILE vga_kontrol.vhd
+set_global_assignment -name VHDL_FILE Goruntu_ureteci.vhd
+set_global_assignment -name VHDL_FILE sync_mod.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_F13 -to rgb1[23]
+set_location_assignment PIN_E12 -to rgb1[22]
+set_location_assignment PIN_D12 -to rgb1[21]
+set_location_assignment PIN_C12 -to rgb1[20]
+set_location_assignment PIN_B12 -to rgb1[19]
+set_location_assignment PIN_E13 -to rgb1[18]
+set_location_assignment PIN_C13 -to rgb1[17]
+set_location_assignment PIN_A13 -to rgb1[16]
+set_location_assignment PIN_E11 -to rgb1[15]
+set_location_assignment PIN_F11 -to rgb1[14]
+set_location_assignment PIN_G12 -to rgb1[13]
+set_location_assignment PIN_G11 -to rgb1[12]
+set_location_assignment PIN_G10 -to rgb1[11]
+set_location_assignment PIN_H12 -to rgb1[10]
+set_location_assignment PIN_J10 -to rgb1[9]
+set_location_assignment PIN_J9 -to rgb1[8]
+set_location_assignment PIN_J14 -to rgb1[7]
+set_location_assignment PIN_G15 -to rgb1[6]
+set_location_assignment PIN_F15 -to rgb1[5]
+set_location_assignment PIN_H14 -to rgb1[4]
+set_location_assignment PIN_F14 -to rgb1[3]
+set_location_assignment PIN_H13 -to rgb1[2]
+set_location_assignment PIN_G13 -to rgb1[1]
+set_location_assignment PIN_B13 -to rgb1[0]
+set_location_assignment PIN_C10 -to sync
+set_location_assignment PIN_D11 -to v_s
+set_location_assignment PIN_B11 -to h_s
+set_location_assignment PIN_A11 -to clk1
+set_location_assignment PIN_F10 -to blank
+set_location_assignment PIN_AE12 -to basla
+set_location_assignment PIN_AD10 -to reset
+set_location_assignment PIN_W15 -to button_l
+set_location_assignment PIN_AA14 -to button_r
+set_location_assignment PIN_AF14 -to clk
+set_global_assignment -name VHDL_FILE Score.vhd
+set_location_assignment PIN_AE26 -to score1[0]
+set_location_assignment PIN_AE27 -to score1[1]
+set_location_assignment PIN_AE28 -to score1[2]
+set_location_assignment PIN_AG27 -to score1[3]
+set_location_assignment PIN_AF28 -to score1[4]
+set_location_assignment PIN_AG28 -to score1[5]
+set_location_assignment PIN_AH28 -to score1[6]
+set_global_assignment -name VHDL_FILE clock1hz.vhd
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_global_assignment -name VHDL_FILE image_files.vhd
+set_global_assignment -name CDF_FILE output_files/Chain5.cdf
+set_global_assignment -name CDF_FILE output_files/Chain6.cdf
+set_global_assignment -name CDF_FILE output_files/Chain7.cdf
+set_global_assignment -name CDF_FILE output_files/Chain8.cdf
+set_global_assignment -name CDF_FILE output_files/Chain9.cdf
+set_global_assignment -name CDF_FILE output_files/Chain10.cdf
+set_global_assignment -name CDF_FILE output_files/Chain11.cdf
+set_global_assignment -name CDF_FILE output_files/Chain12.cdf
+set_global_assignment -name CDF_FILE output_files/Chain18.cdf
+set_global_assignment -name VHDL_FILE typedefs.vhd
+set_global_assignment -name VHDL_FILE bird.vhd
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name VHDL_FILE output_files/vga_kontrol.vhd
+set_global_assignment -name VHDL_FILE game_controller.vhd
+set_global_assignment -name CDF_FILE Chain8.cdf
+set_global_assignment -name CDF_FILE output_files/Chain14.cdf
+set_global_assignment -name CDF_FILE output_files/Chain15.cdf
+set_global_assignment -name CDF_FILE output_files/Chain16.cdf
+set_global_assignment -name CDF_FILE output_files/Chain17.cdf
+set_global_assignment -name CDF_FILE Chain20.cdf
+set_global_assignment -name CDF_FILE output_files/Chain22.cdf
+set_global_assignment -name CDF_FILE output_files/Chain13.cdf
+set_global_assignment -name CDF_FILE output_files/Chain21.cdf
+set_global_assignment -name CDF_FILE output_files/Chain27.cdf
+set_global_assignment -name CDF_FILE output_files/Chain29.cdf
+set_location_assignment PIN_AA15 -to button_j
+set_location_assignment PIN_AB12 -to manual
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name CDF_FILE output_files/Chain19.cdf
+set_global_assignment -name CDF_FILE output_files/Chain20.cdf
+set_global_assignment -name CDF_FILE output_files/Chain24.cdf
+set_global_assignment -name CDF_FILE output_files/Chain26.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

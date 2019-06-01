@@ -1,0 +1,47 @@
+--
+--
+--
+--
+--library IEEE;
+-- use IEEE.STD_LOGIC_1164.ALL;
+-- use IEEE.STD_LOGIC_ARITH.ALL;
+-- use IEEE.STD_LOGIC_UNSIGNED.ALL;
+-- use ieee.numeric_std.all;
+-- use work.typedefs.all;
+-- 
+-- 
+--entity Bird is
+-- Port (
+-- clk: in std_logic;
+-- inputweights : in weights;
+-- pipedistancex : in integer;
+-- pipedistancey : in integer;
+-- outweights : out weights;
+-- score: out integer
+-- 
+-- );
+-- end Bird;
+--
+--
+--architecture bhv of Bird is
+--signal speed:integer range -1023 to 1024 :=0;
+--signal acc:integer range -128 to 128 :=0;
+--begin
+--
+--process(clk)
+--begin
+--
+--
+--
+--end process;
+--
+--
+--
+--
+--
+--
+--
+--
+--end bhv;
+--
+--
