@@ -1,0 +1,97 @@
+                     </template>
+                      </div>
+                    </div>
+                  </paper-item>
+                </template>
+              </paper-menu>
+            </div>
+          </div>
+        </template>
+      </div>
+      <template is="dom-if"
+          if="[[computeIssueBannerShown_(currentView_, issue)]]">
+        <issue-banner id="issue-banner" issue="[[issue]]"
+            class$="[[computeIssueBannerClass_(issue)]]">
+        </issue-banner>
+      </template>
+    </div>
+  </template>
+  <script src="pseudo_sink_search_state.js"></script>
+  <script src="media_router_container.js"></script>
+</dom-module>
+/* Copyright 2015 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+.active-sink {
+  color: var(--paper-blue-700);
+}
+
+.cast-mode-icon,
+.sink-icon {
+  -webkit-padding-end: 12px;
+  -webkit-padding-start: var(--dialog-padding-start);
+  height: var(--non-navigation-icon-size);
+  width: var(--non-navigation-icon-size);
+}
+
+#cast-mode-list {
+  padding-bottom: 12px;
+  padding-top: 4px;
+}
+
+#container-header {
+  position: fixed;
+  width: 100%;
+}
+
+#content {
+  position: relative;
+}
+
+#device-missing {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+#device-missing a {
+  color: var(--paper-blue-700);
+  margin: 8px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+#first-run-button {
+  background-color: white;
+}
+
+#first-run-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#first-run-cloud-checkbox,
+#first-run-flow-cloud-pref,
+#first-run-text {
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
+#first-run-cloud-checkbox,
+#first-run-text,
+#first-run-title {
+  color: white;
+  padding-bottom: 24px;
+}
+
+#first-run-cloud-checkbox::shadow #checkboxLabel {
+  -webkit-padding-start: var(-dialog-padding-start);
+}
+
+#first-run-flow {
+  background-color: var(--paper-blue-700);
+  box-sizing: bo
